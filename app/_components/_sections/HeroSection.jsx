@@ -153,7 +153,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, rotate: -10, scale: 0.8 }}
           animate={{ opacity: 1, rotate: 0, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.8 }}
-          className="absolute -z-10 top-[10%] w-[50%] lg:w-[400%] lg:top-[43%] left-[5%] lg:left-[8%]"
+          className="absolute -z-10 top-[10%] w-[50%] lg:w-[100%] lg:top-[43%] left-[5%] lg:left-[8%]"
         >
           <Image src={landingBackLogog} alt="ahmed mahmoud" quality={100} />
         </motion.div>

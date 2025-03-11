@@ -16,13 +16,11 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="Ahmed.Dev" />
       </Head>
       <body
-        className={`antialiased font-fireCode bg-background text-gray container pt-[10dvh]`}
+        className={`antialiased font-fireCode bg-background text-gray container`}
       >
         <Navbar />
         <SideLinks />
-        <main className="min-h-dvh container overflow-hidden pt-[4rem]">
-          {children}
-        </main>
+        <main className="min-h-dvh pt-[10rem]">{children}</main>
         <Footer />
       </body>
     </html>
