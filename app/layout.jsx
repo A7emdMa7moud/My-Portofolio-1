@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <SideLinks />
-        <main className="min-h-dvh">{children}</main>
+        <main className="min-h-dvh container overflow-hidden pt-[4rem]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
