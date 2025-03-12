@@ -1,6 +1,5 @@
 import "./globals.css";
 import Navbar from "./_components/Navbar";
-import SideLinks from "./_components/SideLinks";
 import Footer from "./_components/Footer";
 import Head from "next/head";
 
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
         className={`antialiased font-fireCode bg-background text-gray container`}
       >
         <Navbar />
-        <SideLinks />
         <main className="min-h-dvh pt-[10rem]">{children}</main>
         <Footer />
       </body>

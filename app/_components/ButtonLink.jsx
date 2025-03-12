@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+
 export default function ButtonLink({
   title,
   href = "#",
@@ -21,7 +22,7 @@ export default function ButtonLink({
             target="_blank"
             href={href}
             rel={newTab ? "noopener noreferrer" : undefined}
-            className={`border flex items-center gap-2 w-max py-2 px-4 transition duration-200 ${
+            className={`border border-gray/50 flex items-center gap-2 w-max py-2 px-4 transition duration-200 ${
               primary
                 ? "text-white border-primary hover:bg-primary/20"
                 : "text-gray hover:bg-gray/20"
@@ -43,7 +44,7 @@ export default function ButtonLink({
           <Link
             href={hashHref ? `#${href}` : `/${href}`}
             rel={newTab ? "noopener noreferrer" : undefined}
-            className={`border flex items-center gap-2 w-max py-2 px-4 transition duration-200 ${
+            className={`border  flex items-center gap-2 w-max py-2 px-4 transition duration-200 ${
               primary
                 ? "text-white border-primary hover:bg-primary/20"
                 : "text-gray hover:bg-gray/20"
