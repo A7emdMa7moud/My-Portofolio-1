@@ -35,10 +35,7 @@ export default function Page() {
 
   return (
     <section>
-      {/* الصفحة الرئيسية */}
       <LandingPages title="Contacts" desription="whit" />
-
-      {/* قسم التواصل */}
       <div className="grid lg:grid-cols-2 gap-20 mb-10">
         <div className="flex justify-center items-center text-white text-lg">
           I’m interested in freelance opportunities. However, if you have other
@@ -46,8 +43,6 @@ export default function Page() {
         </div>
         <ContactsForm />
       </div>
-
-      {/* قسم وسائل التواصل */}
       <div className="overflow-hidden">
         <motion.div
           initial={{ y: -100 }}
@@ -67,8 +62,6 @@ export default function Page() {
             Let's connect!
           </motion.p>
         </motion.div>
-
-        {/* أيقونات وسائل التواصل */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

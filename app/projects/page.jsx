@@ -1,10 +1,7 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-import ButtonLink from "../_components/ButtonLink";
 import eduSprinter from "../../public/photos/edu-sprinter.png";
 import eduSprinterAdmin from "../../public/photos/edu-sprinter-admin.png";
-import github from "../../public/icons/Github.svg";
+import sirb from "../../public/photos/sirb-disktop-1.png";
 import Projects from "../_components/Projects";
 import LandingPages from "../_components/LandingPages";
 import { motion } from "framer-motion";
@@ -17,6 +14,7 @@ export default function page() {
       discription: "Educational website",
       frontend: ["Next.js", "Tailwind"],
       backend: ["NodeJs", "ExpressJs", "MongoDB"],
+      api: "No",
       href: "https://edu-sprinter.vercel.app",
       repo: "https://github.com/A7emdMa7moud/EDU-Sprinter",
     },
@@ -26,8 +24,19 @@ export default function page() {
       discription: "Educational Dashboard",
       frontend: ["Next.js", "Tailwind"],
       backend: ["NodeJs", "ExpressJs", "MongoDB"],
+      api: "No",
       href: "https://edu-sprinter-admin.vercel.app",
       repo: "https://github.com/A7emdMa7moud/EDU-Sprinter-Admin",
+    },
+    {
+      image: sirb,
+      title: "Sirb Movies",
+      discription: "Movies & TV Shows Platform",
+      frontend: ["Next.js", "Tailwind"],
+      backend: ["External data integration"],
+      api: "TMDB API", // هنا وضحت أنك استخدمت API
+      href: "https://sirb-two.vercel.app",
+      repo: "https://github.com/A7emdMa7moud/sirb",
     },
   ];
 
