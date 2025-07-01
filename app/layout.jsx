@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import Head from "next/head";
+import Analytics from "./_components/Analytics";
 
 export const metadata = {
   other: {
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
       <body
         className={`antialiased font-fireCode bg-background text-gray container`}
       >
+        <Analytics />
         <Navbar />
         <main className="min-h-dvh pt-[10rem]">{children}</main>
         <Footer />
