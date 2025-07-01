@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import ButtonLink from "../ButtonLink";
-import landingImage from "../../../public/photos/landing-image.png";
+// import landingImage from "../../../public/photos/landing-image.png";
+import landingImage from "../../../public/photos/photoNoBg-1.png";
 import landingBackLogog from "../../../public/photos/Logo-2.png";
 import dots from "../../../public/photos/Dots.png";
 import Image from "next/image";
@@ -165,7 +166,7 @@ export default function HeroSection() {
           variants={imageVariants}
         >
           <Image
-            className="w-full"
+            className="w-[80%] pl-20"
             src={landingImage}
             alt="Ahmed Mahmoud professional portfolio hero image"
             quality={100}
@@ -190,9 +191,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, rotate: -10, scale: 0.8 }}
           animate={{ opacity: 1, rotate: 0, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.8 }}
-          className="absolute -z-10 top-[10%] w-[50%] lg:w-[100%] lg:top-[43%] left-[5%] lg:left-[8%]"
+          className="absolute -z-10 top-[20%] w-[50%] lg:w-[100%] lg:top-[43%] left-[15%] lg:left-[15%]"
         >
           <Image
+            className="w-20 lg:w-32"
             src={landingBackLogog}
             alt="Ahmed Mahmoud portfolio background logo"
             quality={100}

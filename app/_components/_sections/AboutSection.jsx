@@ -45,68 +45,15 @@ export default function AboutSection() {
           <ButtonLink title={"Read more"} primary={true} href="about" />
         </motion.div>
 
+        {/* Embedded Resume PDF */}
+        <div className="mt-12 w-full flex justify-center">
+          <iframe
+            src="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/preview"
+            className="w-full lg:w-[850px] h-[50dvh]"
+            allow="autoplay"
+          ></iframe>
+        </div>
         {/* الصورة والديكورات */}
-        <motion.div
-          className="flex relative justify-center items-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <Image
-            className="w-[max]"
-            src={aboutImage}
-            alt="about me"
-            quality={100}
-          />
-
-          {/* النقاط */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <Image
-              className="absolute top-14 left-[7%] lg:top-14 lg:left-[27%]"
-              src={dots}
-              alt="decorative dots"
-              quality={100}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <Image
-              className="absolute bottom-[20%] right-[0%] lg:bottom-[20%] lg:right-[20%]"
-              src={dots}
-              alt="decorative dots"
-              quality={100}
-            />
-          </motion.div>
-
-          {/* الخط السفلي */}
-          <motion.span
-            className="absolute w-[67%] lg:w-[35%] h-0.5 left-[20%] lg:left-[34.5%] bottom-0 bg-primary"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut", delay: 1 }}
-            viewport={{ once: true }}
-          />
-        </motion.div>
-      </div>
-
-      {/* Embedded Resume PDF */}
-      <div className="mt-12 w-full flex justify-center">
-        <iframe
-          src="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/preview"
-          className="w-full lg:w-[850px] h-[50dvh]"
-          allow="autoplay"
-        ></iframe>
       </div>
     </motion.div>
   );
