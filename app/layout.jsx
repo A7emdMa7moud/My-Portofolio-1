@@ -27,9 +27,6 @@ export const metadata = {
     "Backend",
     "Egypt",
     "أحمد محمود محمد عبدالفتاح",
-    "كفر العلو",
-    "مبرمج كفر العلو",
-    "مبرمج",
     "مطور ويب",
     "ريأكت",
     "جافاسكريبت",
@@ -37,6 +34,14 @@ export const metadata = {
   authors: [{ name: "Ahmed Mahmoud" }],
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: [
+      {
+        rel: "icon",
+        url: "/favicon.ico",
+      },
+    ],
   },
   openGraph: {
     type: "website",
