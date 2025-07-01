@@ -4,51 +4,69 @@ import Footer from "./_components/Footer";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Ahmed Mahmoud",
-  description: "MERN Stack Developer",
+  title: "Ahmed Mahmoud | MERN Stack Developer in Egypt",
+  description:
+    "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express. Explore my portfolio, projects, and contact info.",
+  keywords: [
+    "Ahmed Mahmoud",
+    "MERN",
+    "Next.js",
+    "React",
+    "Node.js",
+    "MongoDB",
+    "Portfolio",
+    "Web Developer",
+    "Frontend",
+    "Backend",
+    "Egypt",
+    "أحمد محمود محمد عبدالفتاح",
+    "كفر العلو",
+    "مبرمج كفر العلو",
+    "مبرمج",
+    "مطور ويب",
+    "ريأكت",
+    "جافاسكريبت",
+  ],
+  authors: [{ name: "Ahmed Mahmoud" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://ahmed-ma7moud.vercel.app",
+    title: "Ahmed Mahmoud | MERN Stack Developer in Egypt",
+    description:
+      "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express. Explore my portfolio, projects, and contact info.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751328202/thumbnailjpg_woqlid.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ahmed Mahmoud Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    url: "https://ahmed-ma7moud.vercel.app",
+    title: "Ahmed Mahmoud | MERN Stack Developer in Egypt",
+    description:
+      "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern web applications using React.js, Node.js, MongoDB, and Express.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751328202/thumbnailjpg_woqlid.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ahmed Mahmoud Portfolio Preview",
+      },
+    ],
+  },
+  metadataBase: new URL("https://ahmed-ma7moud.vercel.app"),
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="apple-mobile-web-app-title" content="Ahmed.Dev" />
-        <meta
-          name="description"
-          content="MERN Stack Developer portfolio for Ahmed Mahmoud. Modern web apps using Next.js, React, Node.js, MongoDB."
-        />
-        <meta
-          name="keywords"
-          content="Ahmed Mahmoud, MERN, Next.js, React, Node.js, MongoDB, Portfolio, Web Developer, Frontend, Backend"
-        />
-        <meta name="author" content="Ahmed Mahmoud" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#c778dd" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Ahmed Mahmoud | MERN Stack Developer"
-        />
-        <meta
-          property="og:description"
-          content="Portfolio of Ahmed Mahmoud, MERN Stack Developer."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://your-portfolio-url.com" />
-        <meta property="og:image" content="/photos/about-image.png" />
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Ahmed Mahmoud | MERN Stack Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="Portfolio of Ahmed Mahmoud, MERN Stack Developer."
-        />
-        <meta name="twitter:image" content="/photos/about-image.png" />
-      </Head>
       <body
         className={`antialiased font-fireCode bg-background text-gray container`}
       >

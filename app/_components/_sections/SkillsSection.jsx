@@ -79,7 +79,7 @@ export default function SkillsSection() {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="absolute"
           >
-            <Image src={logo} alt="skills logo" width={120} height={120} />
+            <Image src={logo} alt="Ahmed Mahmoud skills section logo" width={120} height={120} />
           </motion.div>
 
           {/* الأيقونات المتحركة */}
@@ -113,7 +113,7 @@ export default function SkillsSection() {
               >
                 <Image
                   src={icon}
-                  alt="decorative icon"
+                  alt="Decorative icon for skills section in Ahmed Mahmoud portfolio"
                   width={90}
                   height={90}
                 />

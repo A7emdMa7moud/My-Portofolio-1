@@ -5,7 +5,7 @@ import React from "react";
 import ButtonLink from "../ButtonLink";
 import eduSprinter from "../../../public/photos/edu-sprinter.png";
 import eduSprinterAdmin from "../../../public/photos/edu-sprinter-admin.png";
-import sirb from "../../../public/photos/sirb-disktop-1.png";
+import sirb from "../../../public/photos/sirb.png";
 import github from "../../../public/icons/Github.svg";
 import Link from "next/link";
 

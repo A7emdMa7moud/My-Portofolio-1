@@ -99,6 +99,15 @@ export default function AboutSection() {
           />
         </motion.div>
       </div>
+
+      {/* Embedded Resume PDF */}
+      <div className="mt-12 w-full flex justify-center">
+        <iframe
+          src="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/preview"
+          className="w-full lg:w-[850px] h-[50dvh]"
+          allow="autoplay"
+        ></iframe>
+      </div>
     </motion.div>
   );
 }

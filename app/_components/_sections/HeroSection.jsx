@@ -6,6 +6,8 @@ import landingImage from "../../../public/photos/landing-image.png";
 import landingBackLogog from "../../../public/photos/Logo-2.png";
 import dots from "../../../public/photos/Dots.png";
 import Image from "next/image";
+import Link from "next/link";
+import { FaRegShareFromSquare } from "react-icons/fa6";
 
 export default function HeroSection() {
   // أنيميشن النصوص
@@ -50,6 +52,9 @@ export default function HeroSection() {
       className="h-[70dvh] grid grid-cols-1 lg:grid-cols-2 gap-4 *:h-full *:w-full"
     >
       <div className="flex justify-center flex-col">
+        <h1 className="sr-only">
+          Hi, I'm Ahmed Mahmoud – MERN Stack Developer
+        </h1>
         <motion.div
           className="text-[32px] pt-6 lg:pt-0 font-semibold tracking-wider"
           initial="hidden"
@@ -58,10 +63,30 @@ export default function HeroSection() {
           <motion.h3
             variants={textVariants}
             custom={0.2}
-            className="text-4xl overflow-hidden text-white cursor-pointer"
+            className="text-4xl overflow-hidden text-white cursor-pointer flex items-center gap-3"
             whileHover={{ color: "#FFD700" }} // تأثير hover
           >
             Ahmed Mahmoud
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => {
+                if (navigator.share) {
+                  navigator.share({
+                    title: "Ahmed Mahmoud | MERN Stack Developer",
+                    text: "Check out Ahmed Mahmoud's portfolio - MERN Stack Developer from Egypt",
+                    url: window.location.href,
+                  });
+                } else {
+                  navigator.clipboard.writeText(window.location.href);
+                  alert("Link copied to clipboard!");
+                }
+              }}
+              className="text-2xl text-primary hover:text-white transition-colors duration-200"
+              title="Share Portfolio"
+            >
+              <FaRegShareFromSquare />
+            </motion.button>
           </motion.h3>
 
           <motion.p
@@ -114,14 +139,21 @@ export default function HeroSection() {
             ))}
         </motion.div>
 
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <ButtonLink
-            className={"mt-8 text-left"}
-            title={"Contact me!!"}
-            primary={true}
-            href="contacts"
-          />
-        </motion.div>
+        <div className="flex gap-4 mt-8">
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <ButtonLink title={"Contact me!!"} primary={true} href="contacts" />
+          </motion.div>
+          {/* Download Resume Button */}
+
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <ButtonLink
+              title={"My Resume"}
+              primary={true}
+              href="https://drive.google.com/file/d/1L_ZMBRa1zd7tn70peFrRjIdtl8iB-EDf/view?usp=sharing"
+              newTab
+            />
+          </motion.div>
+        </div>
       </div>
       {/* ---------------------------- */}
       {/* قسم الصور */}
@@ -135,7 +167,7 @@ export default function HeroSection() {
           <Image
             className="w-full"
             src={landingImage}
-            alt="ahmed mahmoud"
+            alt="Ahmed Mahmoud professional portfolio hero image"
             quality={100}
           />
         </motion.div>
@@ -146,7 +178,12 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="absolute bottom-[10%] right-[8%]"
         >
-          <Image src={dots} alt="ahmed mahmoud" width={100} quality={100} />
+          <Image
+            src={dots}
+            alt="Decorative dots for Ahmed Mahmoud portfolio"
+            width={100}
+            quality={100}
+          />
         </motion.div>
 
         <motion.div
@@ -155,7 +192,11 @@ export default function HeroSection() {
           transition={{ duration: 1.5, delay: 0.8 }}
           className="absolute -z-10 top-[10%] w-[50%] lg:w-[100%] lg:top-[43%] left-[5%] lg:left-[8%]"
         >
-          <Image src={landingBackLogog} alt="ahmed mahmoud" quality={100} />
+          <Image
+            src={landingBackLogog}
+            alt="Ahmed Mahmoud portfolio background logo"
+            quality={100}
+          />
         </motion.div>
 
         {/* نص الحالة */}
