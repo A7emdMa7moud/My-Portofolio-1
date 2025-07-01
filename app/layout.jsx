@@ -4,6 +4,12 @@ import Footer from "./_components/Footer";
 import Head from "next/head";
 
 export const metadata = {
+  other: {
+    "google-site-verification": "HJUTSK_upvniaoLeqQivyeooW95vrxgJjR8JlpdcMmc",
+  },
+  alternates: {
+    canonical: "https://ahmed-ma7moud.vercel.app",
+  },
   title: "Ahmed Mahmoud | MERN Stack Developer in Egypt",
   description:
     "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express. Explore my portfolio, projects, and contact info.",

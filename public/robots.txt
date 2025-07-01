@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ahmed-ma7moud.vercel.app
+
+# Sitemaps
+Sitemap: https://ahmed-ma7moud.vercel.app/sitemap.xml
