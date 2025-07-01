@@ -39,7 +39,7 @@ export const metadata = {
       "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express. Explore my portfolio, projects, and contact info.",
     images: [
       {
-        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751328202/thumbnailjpg_woqlid.jpg",
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751332129/thumbnail_ud6vgd.jpg",
         width: 1200,
         height: 630,
         alt: "Ahmed Mahmoud Portfolio Preview",
@@ -54,7 +54,7 @@ export const metadata = {
       "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern web applications using React.js, Node.js, MongoDB, and Express.",
     images: [
       {
-        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751328202/thumbnailjpg_woqlid.jpg",
+        url: "https://res.cloudinary.com/test-image-upload-2/image/upload/v1751332129/thumbnail_ud6vgd.jpg",
         width: 1200,
         height: 630,
         alt: "Ahmed Mahmoud Portfolio Preview",
