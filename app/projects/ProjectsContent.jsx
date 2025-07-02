@@ -69,4 +69,4 @@ export default function ProjectsContent() {
       </section>
     </Suspense>
   );
-} 
+}

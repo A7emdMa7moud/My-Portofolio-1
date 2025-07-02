@@ -10,7 +10,7 @@ export default function QuoteBoxSection() {
       initial={{ opacity: 0, y: 50, scale: 0.9 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 1.2, type: "spring" }}
-      className="relative mt-28 lg:mt-0 border border-gray max-w-[90%] md:max-w-[60%] lg:max-w-[40%] p-6 md:p-8 mx-auto tracking-wider text-lg md:text-2xl text-center"
+      className="mt-10 lg:mt-20 border border-gray w-full relative p-4 tracking-wider text-lg md:text-2xl text-center"
     >
       {/* نص الاقتباس مع حركة تذبذب */}
       <motion.p
@@ -19,10 +19,11 @@ export default function QuoteBoxSection() {
         transition={{ delay: 0.5, duration: 1, type: "spring" }}
         className="text-center"
       >
-        With great power comes great electricity bill
+        Debugging is like being the detective in a crime movie where you are
+        also the murderer{" "}
       </motion.p>
 
-      {/* اقتباس علوي مع دوران تدريجي */} 
+      {/* اقتباس علوي مع دوران تدريجي */}
       <Image
         className="absolute top-0 bg-background -translate-y-1/2 left-4 md:left-6 px-1 md:px-2 bg-gray-900"
         src={quotes}

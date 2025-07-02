@@ -21,7 +21,7 @@ export default function page() {
             "jobTitle": "MERN Stack Developer",
             "description": "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express.",
             "url": "https://ahmed-ma7moud.vercel.app",
-            "image": "https://ahmed-ma7moud.vercel.app/photos/about-image.png",
+            "image": "https://ahmed-ma7moud.vercel.app/photos/photoNoBg-1.png",
             "sameAs": [
               "https://github.com/A7emdMa7moud",
               "https://www.linkedin.com/in/a7mdma7moud"

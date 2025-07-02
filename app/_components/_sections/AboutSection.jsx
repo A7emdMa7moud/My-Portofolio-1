@@ -2,9 +2,6 @@
 import React from "react";
 import ButtonLink from "../ButtonLink";
 import { motion } from "framer-motion";
-import aboutImage from "../../../public/photos/about-image.png";
-import dots from "../../../public/photos/Dots.png";
-import Image from "next/image";
 
 export default function AboutSection() {
   return (

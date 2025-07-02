@@ -214,15 +214,7 @@ export default function HeroSection() {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           />
-          Currently working on{" "}
-          <motion.p
-            className="text-white font-semibold"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 1.4 }}
-          >
-            Portfolio
-          </motion.p>
+          <motion.span>Open to new opportunities</motion.span>
         </motion.div>
       </div>
     </motion.div>

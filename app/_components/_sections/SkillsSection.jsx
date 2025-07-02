@@ -8,7 +8,21 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function SkillsSection() {
-  const icons = [dots, dots, rectangle, rectangle, dots, dots];
+  const icons = [
+    "/icons/bootstrap-fill-svgrepo-com.svg",
+    "/icons/Express.svg",
+    "/icons/framer-svgrepo-com.svg",
+    "/icons/git-svgrepo-com.svg",
+    "/icons/github-color-svgrepo-com.svg",
+    "/icons/js-svgrepo-com.svg",
+    "/icons/mongo-svgrepo-com.svg",
+    "/icons/nextjs-svgrepo-com.svg",
+    "/icons/nodejs-icon-logo-svgrepo-com.svg",
+    "/icons/npm-svgrepo-com.svg",
+    "/icons/reactjs-svgrepo-com.svg",
+    "/icons/tailwindcss-icon-svgrepo-com.svg",
+    "/icons/typescript-icon-svgrepo-com.svg",
+  ];
   const categories = [
     {
       title: "Tools",
@@ -63,11 +77,7 @@ export default function SkillsSection() {
         <h2 className="text-3xl font-bold text-white tracking-wider lg:line-title">
           <span className="text-primary">#</span> skills
         </h2>
-        <Link className="text-white" href={"/projects"}>
-          View all ~~{">"}
-        </Link>
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 *:min-h-[50dvh]">
         {/* الأيقونات الخلفية */}
         <div className="relative w-full flex justify-center items-center">
@@ -79,7 +89,12 @@ export default function SkillsSection() {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="absolute"
           >
-            <Image src={logo} alt="Ahmed Mahmoud skills section logo" width={120} height={120} />
+            <Image
+              src={logo}
+              alt="Ahmed Mahmoud skills section logo"
+              width={120}
+              height={120}
+            />
           </motion.div>
 
           {/* الأيقونات المتحركة */}
