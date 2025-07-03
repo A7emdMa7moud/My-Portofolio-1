@@ -84,7 +84,7 @@ export default function AnimatedTimeline() {
       details: (
         <>
           <div>Department: Management Information Systems (MIS)</div>
-          <div>Year: Currently a first-year student</div>
+          <div>Year: Currently a thard-year student</div>
           <div>
             Studies: Systems Analysis, Databases, Programming Principles,
             Project Management.
