@@ -24,7 +24,7 @@ export default function page() {
             "image": "https://ahmed-ma7moud.vercel.app/photos/photoNoBg-1.png",
             "sameAs": [
               "https://github.com/A7emdMa7moud",
-              "https://www.linkedin.com/in/a7mdma7moud"
+              "https://www.linkedin.com/in/ahmed-mahmoud-753719261"
             ],
             "address": {
               "@type": "PostalAddress",
