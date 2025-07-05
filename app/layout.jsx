@@ -16,7 +16,10 @@ export const metadata = {
   description:
     "Hi, I'm Ahmed Mahmoud, a MERN Stack developer based in Egypt. I build modern, high-performance web applications using React.js, Node.js, MongoDB, and Express. Explore my portfolio, projects, and contact info.",
   keywords: [
+    "Mern Stack Developer",
     "Ahmed Mahmoud",
+    "Mohamed",
+    "Trika",
     "MERN",
     "Next.js",
     "React",
