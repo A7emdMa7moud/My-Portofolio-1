@@ -86,10 +86,19 @@ export default function RootLayout({ children }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025460416385128"
           crossOrigin="anonymous"
         ></script>
+        <script
+          async
+          custom-element="amp-auto-ads"
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+        ></script>
       </head>
       <body
         className={`antialiased font-fireCode bg-background text-gray container`}
       >
+        <amp-auto-ads
+          type="adsense"
+          data-ad-client="ca-pub-7025460416385128"
+        ></amp-auto-ads>
         <Analytics />
         <Navbar />
         <main className="min-h-dvh pt-[10rem]">{children}</main>
