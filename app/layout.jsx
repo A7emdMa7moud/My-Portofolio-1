@@ -7,6 +7,7 @@ import Analytics from "./_components/Analytics";
 export const metadata = {
   other: {
     "google-site-verification": "HJUTSK_upvniaoLeqQivyeooW95vrxgJjR8JlpdcMmc",
+    "google-adsense-account": "ca-pub-7025460416385128",
   },
   alternates: {
     canonical: "https://ahmed-ma7moud.vercel.app",
@@ -79,6 +80,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025460416385128"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body
         className={`antialiased font-fireCode bg-background text-gray container`}
       >
