@@ -12,7 +12,7 @@
     "postbuild": "next-sitemap --config next-sitemap.config.cjs"
   },
   "dependencies": {
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.23.0",
     "motion": "^12.4.10",
     "next": "15.1.5",
     "react": "^19.0.0",

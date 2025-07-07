@@ -3,6 +3,7 @@ import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import Head from "next/head";
 import Analytics from "./_components/Analytics";
+import Script from "next/script";
 
 export const metadata = {
   other: {
@@ -83,18 +84,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script
+      <Head>
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025460416385128"
           crossOrigin="anonymous"
-        ></script>
-        <script
+        ></Script>
+        <Script
           async
           custom-element="amp-auto-ads"
           src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
-        ></script>
-      </head>
+        ></Script>
+      </Head>
       <body
         className={`antialiased font-fireCode bg-background text-gray container`}
       >
