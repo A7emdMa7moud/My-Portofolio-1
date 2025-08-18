@@ -4,6 +4,7 @@ import Footer from "./_components/Footer";
 import Head from "next/head";
 import Analytics from "./_components/Analytics";
 import Script from "next/script";
+import PWARegister from "./_components/PWARegister";
 
 export const metadata = {
   other: {
@@ -85,6 +86,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="apple-touch-icon" href="/photos/Logo-2.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="theme-color" content="#C778DD" />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7025460416385128"
@@ -104,6 +110,7 @@ export default function RootLayout({ children }) {
           data-ad-client="ca-pub-7025460416385128"
         ></amp-auto-ads>
         <Analytics />
+        <PWARegister />
         <Navbar />
         <main className="min-h-dvh pt-[10rem]">{children}</main>
         <Footer />
